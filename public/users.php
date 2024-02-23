@@ -9,7 +9,7 @@
     <div class="crud">
         <h3>Lista de usuários da tabela testeconexao</h3>
         <?php
-        require('../DataBase.php');
+        require('../app/DataBase.php');
         $DataBase = new DataBase();
         $sql = "SELECT * FROM testetabela WHERE id > :id";
         $binds = ['id' => 'id'];
@@ -20,7 +20,7 @@
                 echo"Nome: {$item['nome']}<br>";
                 echo"Email: {$item['email']}<br>";
                 echo"Descrição: {$item['descricao']}<br>";
-                echo"</div>";
+                echo"</div><br>";
             }
         } else {
                 echo "<div class = 'vazio'>";
