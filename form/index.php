@@ -30,6 +30,7 @@
          }
      }
     ?>
+    <a href="../public/users.php">Lista</a>
 </div>
 </body>
 </html>

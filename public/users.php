@@ -29,5 +29,6 @@
             }
         ?>
     </div>
+    <a href="../form/index.php">Voltar</a>
 </body>
 </html>
