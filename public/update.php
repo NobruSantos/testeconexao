@@ -10,7 +10,7 @@
     <?php
     require('../app/DataBase.php');
     $DataBase = new DataBase();
-    $sql = "UPDATE usuarios SET id = :id WHERE id > :id";
+    $sql = "UPDATE testetabela SET id = :id WHERE id > :id";
     $binds = ['id'=>'4','id' => 3];
     $result = $DataBase -> update($sql, $binds);
     if($result){ 

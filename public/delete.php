@@ -10,7 +10,7 @@
     <?php
     require('../app/DataBase.php');
     $DataBase = new DataBase();
-    $sql = "DELETE FROM usuarios WHERE id = :id";
+    $sql = "DELETE FROM testetabela WHERE id = :id";
     $binds = ['id' => 4];
     $result = $DataBase -> delete($sql, $binds);
     if($result){ 
